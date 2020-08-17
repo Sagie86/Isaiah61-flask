@@ -24,6 +24,11 @@ def missions():
     return render_template("missions.html")
 
 
+@app.route('/events')
+def events():
+    return render_template("events.html")
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),
             port=int(os.environ.get('PORT', '5000')),
